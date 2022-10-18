@@ -1,0 +1,15 @@
+name: ActionsTestChild
+
+on: 
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+      - name: "Do a thing"
+        run: |
+          echo "Hello from child in $pwd"
